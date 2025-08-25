@@ -1,0 +1,24 @@
+h1 {
+    background-color: darkgray;
+}
+
+h2 {
+    background-color: green;
+}
+
+.box1 {
+    background-color: blue;
+    padding: 100px;
+}
+
+.box2 {
+    background-color: red;
+    /*trên -> phải -> dưới -> trái*/
+    margin: 50px 10px 100px 30px;
+}
+
+.box3 {
+    background-color: chartreuse;
+    width: 50%;
+    margin: 50px auto;
+}
