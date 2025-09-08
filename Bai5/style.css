@@ -1,235 +1,292 @@
 body {
-  margin: 0;
-  font-family: Roboto, Arial, Tahoma;
+    margin: 0 auto;
+    font-family: Roboto, Arial, Tahoma, sans-serif;
+    background-color: #f1f1f2;
 }
-nav {
-  background-color: #0c4ca3;
-}
-ul {
-  display: flex;
-  list-style: none;
-  /* gap: 20px; xét khoảng cách các phần tử bên trong thẻ ul */
-  justify-content: center;
-  /* căn giữa các mục */
-}
-.danhmuc-lienket {
-  color: white;
-  text-decoration: none;
-}
-li {
-  padding: 15px;
-}
-.border {
-  border-right: 1px solid gray;
-}
-.kich-thuoc {
-  width: 1020px;
-  height: 417.96px;
-  margin: 0 auto 20px;
-}
-.banner-qc {
-  display: flex;
-}
-.qc {
-  display: flex;
-}
-.anh-qc {
-  border: 0.5px solid gray;
-  margin-right: 5px;
-}
-.anh-qc-1{
-  width: 22vh;
-}
+
 header {
-  border-bottom: 10px solid rgb(209, 206, 206);
+    background-color: #ffffff;
+    border-bottom: 15px solid #f1f1f2;
+    text-align: center;
 }
-.news,
-.tb-header {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid gray;
-  margin-bottom: 15px;
+
+.boder{
+    border-right: 1px solid gray;
 }
+
+header img {
+    max-width: 900px;
+    height: auto;
+    display: inline-block;
+}
+
+.qc {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    background-color: #0c4ca3;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding: 15px 20px;
+}
+
+.danhmuc-lienket {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.danhmuc-lienket:hover {
+    color: #ffd700;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.news {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 .tin-tuc {
-  font-size: larger;
-  text-decoration: none;
-  color: #024da1;
-  border-bottom: 2px solid #0f75bc;
-  padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
 }
+
+.tin-tuc a.tin-tuc {
+    font-size: 24px;
+    font-weight: bold;
+    color: #024da1;
+    text-decoration: none;
+    border-bottom: 2px solid #0f75bc;
+    padding: 0;
+}
+
 .xem-them {
-  font-size: small;
-  text-decoration: none;
-  color: #939597;
-  padding-top: 20px;
+    font-size: 14px;
+    color: #939597;
+    text-decoration: none;
 }
-.news-photo {
-  display: flex;
-  justify-content: center;
+
+.mucmoi {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
-.new-content {
-  width: 30vh;
-  padding: 20px;
+
+.muc-nho {
+    flex: 1;
+    padding: 0;
 }
-.new-content img {
-  width: 30vh;
+
+.muc-nho img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
 }
-.new-content p {
-  font-size: small;
+
+.muc-nho h2 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 1.3;
 }
-.chay-thu-anh img {
-  width: 153px;
-  height: 61.6px;
-  border: 1px solid gray;
-  margin-right: -5px;
+
+.muc-nho h2 a {
+    color: #333;
+    text-decoration: none;
 }
-.chay-thu {
-  display: flex;
+
+.muc-nho ul {
+    display: block;
+    list-style-type: square;
+    padding-left: 20px;
 }
-.chay-thu-nut {
-  border: 1px solid gray;
-  margin-left: 6px;
-  height: 62.2px;
+
+.muc-nho li {
+    padding: 5px 0;
 }
-.chay-thu-nut p {
-  font-size: small;
-  text-align: center;
+
+.muc-nho li a {
+    font-size: 14px;
+    color: #555;
+    text-decoration: none;
+    line-height: 1.5;
 }
-.container {
-  margin-top: 100px;
-  background-color: #93959739;
+
+.muc-nho li a:hover {
+    color: #0c4ca3;
 }
-.tb-content {
-  display: flex;
-  justify-content: baseline;
+
+.muc-luc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #6d4b4b;
+    padding: 10px 15px;
 }
-.tb-anh,
-.tb-thong-tin,
-.tb-tin-tuc {
-  width: 342px;
+
+.muc-anh {
+    display: flex;
+    align-items: center;
+    gap: 70px;
 }
-.tb-thong-tin p {
-  font-size: small;
+
+.muc-link {
+    display: block;
+    border-radius: 8px;
 }
-.tb-tin-tuc p {
-  font-size: large;
-  color: #0c4ca3;
-  text-align: center;
+
+.muc-link img {
+    display: block;
+    width: 100px;
+    height: auto;
 }
-.tb-thong-tin {
-  position: relative;
+
+.lienket-wedsite {
+    font-size: 10px;
 }
-.tb-thong-tin a {
-  position: absolute;
-  right: 10px;
+
+.thong-bao {
+    display: flex;
+    background: #ada4a4;
+    margin-top: 100px;
 }
-.news-1 a {
-  padding: 11.5px;
-  margin-right: 10px;
+
+.bang-thong-bao {
+    display: flex;
+    justify-content: baseline;
 }
-.tin-tuc2 {
-  font-size: small;
+
+.ts {
+    display: flex;
+    gap: 170px;
 }
-.ts-content img {
-  text-align: center;
-  width: 32vh;
+
+.tieu-de-tuyen-sinh {
+    display: flex;
+    gap: 500px;
+    color: #0c4ca3;
 }
-.ts-news {
-  display: flex;
+
+.content-tuyensinh {
+    display: block;
 }
-.ts-content2 {
-  margin-right: 18px;
+
+.body-tuyen-sinh {
+    display: flex;
+    text-align: center;
 }
-.ts-content2 img {
-  text-align: center;
-  width: 32vh;
+
+.content-tuyensinh img {
+    text-align: center;
+    width: 32vh;
 }
-.kich-thuoc2 {
-  width: 1020px;
-  height: 317.96px;
-  margin: 0 auto 20px;
+
+.tieu-de-sv {
+    display: flex;
+    gap: 1000px;
+    color: #0c4ca3;
 }
-.anh-doi-tac img {
-  width: 28vh;
-  border: 0.1px solid rgba(128, 128, 128, 0.371);
-  margin-right: 5px;
+
+.content-sv {
+    display: block;
 }
+
+.body-sv {
+    display: flex;
+    text-align: center;
+}
+
+.content-sv img {
+    text-align: center;
+    width: 51vh;
+}
+
+.body-dt {
+    display: flex;
+    text-align: center;
+    gap: 5px;
+}
+
 .video-link {
-  display: flex;
-  background-color: black;
-  padding: 10px;
+    display: flex;
+    background-color: black;
+    padding: 10px;
 }
+
 .kich-thuoc3 {
-  width: 1020px;
-  height: 160px;
-  margin: 0 auto 20px;
+    width: 1020px;
+    height: 160px;
+    margin: 0 auto 20px;
 }
+
 .link a {
-  color: white;
-  text-decoration: none;
-  display: block;
-  padding: 20px;
-  border-bottom: 1px dotted white;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    border-bottom: 1px dotted white;
 }
+
 .video p {
-  color: white;
-  border-bottom: 1px dotted white;
-  padding: 5px;
+    color: white;
+    border-bottom: 1px dotted white;
+    padding: 5px;
 }
+
 .link {
-  border-left: 1px dotted white;
+    border-left: 1px dotted white;
 }
-.container2 {
-  background-color: #024da1;
-  padding: 20px;
+
+.mxh {
+    display: flex;
 }
-.container2 p {
-  color: white;
+
+.tong-ket {
+    display: flex;
+    gap: 100px;
+    background: #0f75bc;
 }
-.map1 {
-  font-size: larger;
+
+.sizemap {
+    width: 283px;
+    height: 155px;
 }
-.map2 {
-  font-size: small;
+
+.thong-tin-khac1 {
+    display: flex;
+    gap: 200px;
+    text-decoration: none;
 }
-.chan-trang {
-  display: flex;
-  justify-content: space-between;
+
+.tong-ket1 {
+    display: flex;
+    gap: 50px;
 }
-.vitri-tren a {
-  color: white;
-  display: block;
-  text-decoration: none;
-}
-.vitri-tren {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 2px solid white;
-  margin-bottom: 30px;
-  /* padding: 10px; */
-}
-.vitri-phai {
-  padding-top: 20px;
-}
-.vitri-trai a {
-  margin-bottom: 10px;
-}
-.vitri-phai a {
-  margin-bottom: 10px;
-}
-.vitri-duoi {
-  text-align: end;
-}
-.fa-brands {
-  margin-right: 10px;
-  width: 30px;
-  height: 25px;
-  background-color: rgba(255, 255, 255, 0.262);
-  border-radius: 50%;
-  text-align: center;
-  padding-top: 5px;
-}
-i:hover {
-  background-color: white;
-  padding-top: 6px;
+
+.m {
+    color: white;
 }
