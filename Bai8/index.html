@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai7</title>
+</head>
+
+<body>
+    <script src="./scrips.js"></script>
+    <script>
+        //để viết chú thích js, dùng ký tự "//"
+        document.writeln("hello world <br>");    
+
+        let hoTen = "Pham Thanh Khang" + "<br>";
+        // "+" dùng để nối chuỗi
+        document.writeln(hoTen);
+
+        const pi = 3.14;
+
+        let num1 = 10;
+        let num2 = 5;
+        let result = 0;
+        result1 = num1 + num2;
+        let result2 = num1 - num2;
+        let result3 = num1 * num2;
+        let result4 = num1 / num2;
+        let result5 = num1 % num2;
+        num1 += num2
+        document.writeln(result1);
+        document.writeln(result2);
+        document.writeln(result3);
+        document.writeln(result4);
+        document.writeln(result5);
+        document.writeln(++result4);
+        document.writeln(--result4);
+        document.writeln(num1);
+
+        let num3 = 10;
+        let num4 = "10";
+        document.writeln(!(num3 !== num4));
+        let result6;
+        document.writeln(result6);
+
+        let num7 = "20";
+        num7 = parseInt(num7)
+
+        document.writeln(typeof(num7));
+
+        let studentInfo = {
+            fullName: "Phạm Thành Khang",
+            age: 20,
+            gender: true,
+            class: "DCCTCT68B",
+        };
+
+        let addressOfKhang = {
+            city: "Hà Nội",
+            urban: "Bắc Từ Liêm",
+            street: "Phú Minh",
+            numHome: 28
+        };
+
+        studentInfo.adress = addressOfKhang;
+
+        document.writeln("Xin chào bạn " + studentInfo.fullName + " lớp " + studentInfo.class + "nhà ở " + studentInfo.address.city + " đường " + studentInfo.address.street + " số nhà " + studentInfo.address.numHome);
+
+        
+    </script>    
+</body>
+
+</html>
