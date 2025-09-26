@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai9</title>
+</head>
+
+<body>
+    <script>
+        let donHang = {
+            maDonHang: "123",
+            hoTen: "Phạm Thành Khang",
+            sdt: "0399056896",
+            trangthaiTVTT: true,
+            danhSachSP: {
+                sanPham1: {
+                    maSP: "caphe",
+                    tenSP: "Cà phê",
+                    soLuong: 5,
+                    gia: 30000
+                },
+                sanPham2: {
+                    maSP: "matcha",
+                    tenSP: "Matcha",
+                    soLuong: 6,
+                    gia: 25000
+                },
+                sanPham3: {
+                    maSP: "trasua",
+                    tenSP: "Trà sữa",
+                    soLuong: 8,
+                    gia: 20000
+                }
+            },
+            trangthaiTT: true,
+            diaChi: "Hà Nội"
+        }
+
+        tongSP = (donHang.danhSachSP.sanPham1.soLuong * donHang.danhSachSP.sanPham1.gia) 
+        + (donHang.danhSachSP.sanPham2.soLuong * donHang.danhSachSP.sanPham2.gia) 
+        + (donHang.danhSachSP.sanPham3.soLuong * donHang.danhSachSP.sanPham3.gia);
+        document.writeln(tongSP + "<br>");
+
+        let hoTen = "Phạm Thành Khang";
+        document.writeln(hoTen.length + "<br>");
+
+        let myString = "Hello Khang";
+        document.writeln(myString[4] + "<br>");
+        document.writeln(myString.slice(1, 4) + "<br>");
+        document.writeln(myString.replace("Hello", "Hi") + "<br>");
+        document.writeln(myString.toLocaleUpperCase() + "<br>");
+        document.writeln(myString.indexOf(" ") + "<br>");
+        document.writeln(myString.includes("b") + "<br>");
+        document.writeln(myString.split("") + "<br>");
+        document.writeln(myString.split(" ") + "<br>");
+        document.writeln(myString.split("h") + "<br>");
+        document.writeln(myString.startsWith("Hello") + "<br>");
+
+        let pi = 3.14159;
+        document.writeln(pi.toFixed(2) + "<br>");
+        document.writeln(isNaN("10") + "<br>");
+
+        let homNay = new Date();
+        document.writeln(homNay.getFullYear() + "<br>");
+        document.writeln(homNay.getMonth() + "<br>");
+        document.writeln(homNay.getDate() + "<br>");
+        document.writeln(homNay.getDay() + "<br>");
+        document.writeln(homNay.getHours() + "<br>");
+        document.writeln(homNay.getMinutes() + "<br>");
+        document.writeln(homNay.getSeconds() + "<br>");
+
+    </script>
+</body>
+
+</html>
