@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai10</title>
+</head>
+
+<body>
+    <script>
+        let arr = [1, 2, 3, 4, "a", "b", "c", 2, 3];
+        document.writeln(Array.isArray(arr) + "<br>");
+        document.writeln(arr.length + "<br>");
+        document.writeln(arr[2] + "<br>");
+        document.writeln(arr.indexOf(3) + "<br>");
+        document.writeln(arr.lastIndexOf(3) + "<br>");
+        arr[3] = 6;
+        document.writeln(arr + "<br>");
+        let a, b, c, d;
+        a = [1, 2, 3];
+        b = "JavaScript";
+        c = [42, "JS"];
+        d = a.concat(b, c);
+        document.writeln(d + "<br>");
+        d = d.join("-");
+        document.writeln(d + "<br>");
+        d2 = a.concat(b, c);
+        d2.pop();
+        document.writeln(d2 + "<br>");
+        d2.push("Mạnh");
+        document.writeln(d2 + "<br>");
+        d2.reverse(0);
+        document.writeln(d2 + "<br>");
+        d2.shift();
+        document.writeln(d2 + "<br>");
+        d2.unshift("Mẹnh");
+        document.writeln(d2 + "<br>");
+
+        let so = "10000000000000000000000000000001";
+        let soCuoi = so[so.length - 1];
+        if (soCuoi % 2 == 0){
+            document.writeln(so + " là số chẵn" + "<br>");
+        }
+        else{
+            document.writeln(so + " là số lẻ" + "<br>");
+        }
+
+        let now = new Date().getHours();
+        if (now >= 5 && now < 10){
+            document.writeln("Chào buổi sáng" + "<br>");
+        }
+        else if (now >= 10 && now < 13){
+            document.writeln("Chào buổi trưa" + "<br>");
+        }
+        else if (now >= 13 && now < 17){
+            document.writeln("Chào buổi chiều" + "<br>");
+        }
+        else if (now >= 17 && now < 22){
+            document.writeln("Chào buổi tối" + "<br>");
+        }
+        else{
+            document.writeln("Chào buổi đêm" + "<br>");
+        }
+
+        //let diem = promt("Hãy nhập 3 điểm a, b, c: ");
+        let a1 = 7;
+        let b1 = 7;
+        let c1 = 7;
+        let tong = a1 * 0.6 + b1 * 0.3 + c1 * 0.1;
+        if (tong >= 7 && tong <= 8){
+            document.writeln("B" + "<br>");
+        }
+        else if (tong >= 5 && tong < 7){
+            document.writeln("C" + "<br>");
+        }
+        else if (tong >= 4 && tong < 5){
+            document.writeln("D" + "<br>");
+        }
+        else if (tong < 4){
+            document.writeln("F" + "<br>");
+        }
+        else{
+            document.writeln("A" + "<br>");
+        }
+
+    </script>
+</body>
+</html>
