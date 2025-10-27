@@ -39,24 +39,26 @@
             if (canhBao) {
                 alert(canhBao);
             }
-            if ((diemA < 0 || diemA >10) || (diemB < 0 || diemB >10) || (diemC < 0 || diemC >10)){
+            if ((diemA < 0 || diemA > 10) || (diemB < 0 || diemB > 10) || (diemC < 0 || diemC > 10)) {
                 canhBao += "Điểm A, B, C phải nằm trong khoảng [0, 10]";
             }
             if (canhBao) {
                 alert(canhBao);
-            }
-            tong = diemA * 0.6 + diemB * 0.3 + diemC * 0.1;
-            if (tong >= 7 && tong <= 8) {
-                document.getElementById("ketQua").value = "B";
-            } else if (tong >= 5 && tong < 7) {
-                document.getElementById("ketQua").value = "C";
-            } else if (tong >= 4 && tong < 5) {
-                document.getElementById("ketQua").value = "D";
-            } else if (tong < 4) {
-                document.getElementById("ketQua").value = "E";
             } else {
-                document.getElementById("ketQua").value = "A";
+                tong = diemA * 0.6 + diemB * 0.3 + diemC * 0.1;
+                if (tong >= 7 && tong <= 8) {
+                    document.getElementById("ketQua").value = "B";
+                } else if (tong >= 5 && tong < 7) {
+                    document.getElementById("ketQua").value = "C";
+                } else if (tong >= 4 && tong < 5) {
+                    document.getElementById("ketQua").value = "D";
+                } else if (tong < 4) {
+                    document.getElementById("ketQua").value = "E";
+                } else {
+                    document.getElementById("ketQua").value = "A";
+                }
             }
+
         }
         //document.getElementById("ketQua").value = tong;
     </script>
