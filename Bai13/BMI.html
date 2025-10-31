@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+</head>
+
+<body>
+    <div>
+        <h1>Tính chỉ số BMI</h1>
+    </div>    
+    <div>
+        <h1>Công thức: Cân năng / (Chiều cao * Chiều cao)</h1>
+    </div>
+    <div>
+        <h1>Chiều cao: m</h1>
+    </div>
+    <div>
+        <p>Nhập cân nặng(kg): </p>
+        <input type="text" id="weight">
+    </div>
+    <div>
+        <p>Nhập chiều cao(m): </p>
+        <input type="text" id="height">
+    </div>
+    <div>
+        <img src="" alt="">
+    </div>
+    <div>
+        <button onclick="kiemTra()">Kiểm tra</button>
+    </div>
+    <div>
+        Kết quả: <input type="number" id="ketQua" class="ket-qua">
+    </div>
+    <script>
+        kiemTra(){
+            let weight = parseFloat(document.getElementById("weight").value);
+            let height = parseFloat(document.getElementById("height").value);
+            let canhBao = "";
+            if (!weight || !weight){
+                canhBao += "Vui lòng nhập đủ";
+            }
+            if (weight < 0 || height < 0){
+                canhBao += "Chiều cao hoặc cân nặng không thể âm";
+            }
+            if (canhBao){
+                alert(canhBao);
+            }
+            let bmi = weight / (height * height);
+            if (bmi < 18.5){
+                document.getElementsByTagName('img')[0].src="./weight1";
+            }
+            else if(bmi >= 18.5 || bmi <= 24.9){
+                document.getElementsByTagName('img')[1].src="./weight2";
+            }
+            else if(bmi >= 25 || bmi < 29.9){
+                document.getElementsByTagName('img')[2].src="./weight3";
+            }
+            else if(bmi >= 30 || bmi < 39.9){
+                document.getElementsByTagName('img')[3].src="./weight4";
+            }
+            else if(bmi > 40){
+                document.getElementsByTagName('img')[4].src="./weight5";
+            }
+            document.getElementById('ketQua').value = bmi
+        }
+    </script>
+</body>
+</html>
